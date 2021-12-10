@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->delete();
 
         $this->createNewUsers();
-        $this->createManyUsers( 3);
+//        $this->createManyUsers( 4);
     }
 
     protected function createNewUsers()
@@ -69,6 +69,14 @@ class UsersTableSeeder extends Seeder
                 'email' => 'accountant@accountant.com',
                 'user_type' => 'accountant',
                 'username' => 'accountant',
+                'password' => $password,
+                'code' => strtoupper(Str::random(10)),
+                'remember_token' => Str::random(10),
+            ],
+            ['name' => 'Student',
+                'email' => '123456@student.com',
+                'user_type' => 'student',
+                'username' => 'student123456',
                 'password' => $password,
                 'code' => strtoupper(Str::random(10)),
                 'remember_token' => Str::random(10),
