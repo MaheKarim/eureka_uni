@@ -22,6 +22,7 @@
                                 <th>S/N</th>
                                 <th>Name</th>
                                 <th>Description</th>
+                                <th>Available Seat</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -31,6 +32,7 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $d->name }}</td>
                                     <td>{{ $d->description}}</td>
+                                    <td>{{ $d->available }}</td>
                                     <td class="text-center">
                                         <div class="list-icons">
                                             <div class="dropdown">
@@ -76,6 +78,13 @@
                                     <label class="col-lg-3 col-form-label font-weight-semibold">Description</label>
                                     <div class="col-lg-9">
                                         <input name="description" value="{{ old('description') }}"  type="text" class="form-control" placeholder="Description of Dormitory">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label font-weight-semibold">Available</label>
+                                    <div class="col-lg-9">
+                                        <input name="available" value="{{ old('available') }}"  type="text" class="form-control" placeholder="Available Seat">
                                     </div>
                                 </div>
 

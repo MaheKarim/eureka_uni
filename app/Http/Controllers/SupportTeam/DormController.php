@@ -6,6 +6,7 @@ use App\Helpers\Qs;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Dorm\DormCreate;
 use App\Http\Requests\Dorm\DormUpdate;
+use App\Models\Dorm;
 use App\Repositories\DormRepo;
 
 class DormController extends Controller
@@ -28,8 +29,8 @@ class DormController extends Controller
 
     public function store(DormCreate $req)
     {
-        $data = $req->only(['name', 'description']);
-        $this->dorm->create($data);
+        $data = new Dorm();
+        $data->fill($req->all())->save();
 
         return Qs::jsonStoreOk();
     }
@@ -44,7 +45,7 @@ class DormController extends Controller
 
     public function update(DormUpdate $req, $id)
     {
-        $data = $req->only(['name', 'description']);
+        $data = $req->only(['name', 'description', 'available']);
         $this->dorm->update($id, $data);
 
         return Qs::jsonUpdateOk();

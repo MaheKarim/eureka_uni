@@ -27,6 +27,13 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label font-weight-semibold">Availability</label>
+                            <div class="col-lg-9">
+                                <input name="available" value="{{ $dorm->available }}"  type="text" class="form-control" placeholder="Available Seat">
+                            </div>
+                        </div>
+
                         <div class="text-right">
                             <button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
                         </div>

@@ -17,6 +17,7 @@ class DormCreate extends FormRequest
     {
         return [
             'name' => 'required|string|unique:dorms',
+            'available' => 'numeric',
         ];
     }
 

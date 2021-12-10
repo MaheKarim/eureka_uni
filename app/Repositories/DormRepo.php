@@ -12,7 +12,7 @@ class DormRepo
         return Dorm::create($data);
     }
 
-    public function getAll($order = 'name')
+    public function getAll($order = 'id')
     {
         return Dorm::orderBy($order)->get();
     }
