@@ -17,22 +17,8 @@
                         <i class="ri-global-line"></i>
                         <select>
                             <option value="1">English</option>
-                            <option value="2">العربيّة</option>
-                            <option value="3">Deutsch</option>
-                            <option value="4">Português</option>
-                            <option value="5">简体中文</option>
+                            <option value="2">Bangla</option>
                         </select>
-                    </div>
-                    <div class="my-account">
-                        <a href="my-account.html">
-                            <i class="ri-user-fill"></i>
-                        </a>
-                    </div>
-                    <div class="cart-icon">
-                        <a href="cart.html">
-                            <i class="ri-shopping-cart-line"></i>
-                            <span>03</span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -44,8 +30,8 @@
         <div class="container">
             <div class="mobile-responsive-menu">
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="{{ asset('/') }}front-assets/images/logo.png" alt="logo">
+                    <a href="{{ url('/homepage') }}">
+                        <img src="{{ asset('/') }}front-assets/images/logo.png" alt="logo" height="5px" width="5px">
                     </a>
                 </div>
                 <div class="others-options-for-mobile-devices">
@@ -68,7 +54,7 @@
     <div class="desktop-nav">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="{{ url('/homepage') }}">
                     <img src="{{ asset('/') }}front-assets/images/logo.png" alt="logo">
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -207,44 +193,9 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Shop
-                                <i class="ri-arrow-down-s-line"></i>
+                            <a href="{{ url('/dashboard') }}" class="nav-link">
+                                Hall Allotment
                             </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a href="products.html" class="nav-link">Products</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="cart.html" class="nav-link">Cart</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="wishlist.html" class="nav-link">Wishlist</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="checkout.html" class="nav-link">Checkout</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="product-details.html" class="nav-link">Product details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Blog
-                                <i class="ri-arrow-down-s-line"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a href="blog.html" class="nav-link">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="blog-left-sidebar.html" class="nav-link">Blog left sidebar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="blog-details.html" class="nav-link">Blog details</a>
-                                </li>
-                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">Contact</a>
@@ -256,11 +207,6 @@
                                 <a href="{{ url('/login') }}" class="default-btn">
                                     Student Portal
                                 </a>
-                            </li>
-                            <li>
-                                <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-target="#exampleModalsrc">
-                                    <i class="ri-search-line"></i>
-                                </button>
                             </li>
                         </ul>
                     </div>

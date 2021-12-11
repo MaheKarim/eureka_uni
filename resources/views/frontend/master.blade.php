@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        @include('frontend.inc.style')
+    @include('frontend.inc.style')
     <title>City University </title>
 </head>
 <body>
@@ -22,64 +21,12 @@
 </header>
 
 
-<div class="modal fade search-modal-area" id="exampleModalsrc">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <button type="button" data-bs-dismiss="modal" class="closer-btn">
-                <i class="ri-close-line"></i>
-            </button>
-            <div class="modal-body">
-                <form class="search-box">
-                    <div class="search-input">
-                        <input type="text" name="Search" placeholder="Search for..." class="form-control">
-                        <button type="submit" class="search-btn">
-                            <i class="ri-search-line"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 <section class="banner-area bg-2 banner-area-style-two jarallax" data-jarallax='{"speed": 0.3}'>
     <div class="container">
-        <div class="banner-content">
-            <span>Welcome to Unco</span>
-            <h1>Life the journey get the bright career</h1>
-            <form class="find-courses-from-bg">
-                <ul>
-                    <li>
-                        <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Keyword search">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="form-group">
-                            <select class="form-control">
-                                <option value="1">Category course</option>
-                                <option value="2">Web Design</option>
-                                <option value="3">Web Developement</option>
-                                <option value="4">Graphic Design</option>
-                                <option value="5">App Developement</option>
-                            </select>
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <button type="submit" class="default-btn">
-                            Search
-                            <i class="ri-search-line"></i>
-                        </button>
-                    </li>
-                </ul>
-            </form>
-        </div>
         <div class="video-banner">
-            <img src="{{ asset('/') }}front-assets/images/banner/video-img.jpg" alt="Image">
+            <img src="{{ asset('/') }}front-assets/images/banner/video-img.png" alt="Image">
             <div class="video-button">
-                <a href="https://www.youtube.com/watch?v=rl93WvCJt-U" class="popup-youtube video-btn">
+                <a href="https://youtu.be/NpWvMoizhqE" class="popup-youtube video-btn">
                     <i class="flaticon-play-button"></i>
                 </a>
             </div>
@@ -95,7 +42,8 @@
     <div class="container">
         <div class="section-title">
             <h2>Browse courses by study area</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna</p>
         </div>
         <div class="row justify-content-center">
             <div class="study-slider owl-carousel owl-theme">
@@ -108,7 +56,8 @@
                         <h3>
                             <a href="study-online.html">Business and finance</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et
+                            dolore.</p>
                         <a href="study-online.html" class="read-more">
                             Find out more
                             <span class="ri-arrow-right-line"></span>
@@ -124,7 +73,8 @@
                         <h3>
                             <a href="study-online.html">IT and data science</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et
+                            dolore.</p>
                         <a href="study-online.html" class="read-more">
                             Find out more
                             <span class="ri-arrow-right-line"></span>
@@ -140,7 +90,8 @@
                         <h3>
                             <a href="study-online.html">Law and criminology</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et
+                            dolore.</p>
                         <a href="study-online.html" class="read-more">
                             Find out more
                             <span class="ri-arrow-right-line"></span>
@@ -156,7 +107,8 @@
                         <h3>
                             <a href="study-online.html">Health and medicine</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et
+                            dolore.</p>
                         <a href="study-online.html" class="read-more">
                             Find out more
                             <span class="ri-arrow-right-line"></span>
@@ -172,7 +124,8 @@
                         <h3>
                             <a href="study-online.html">Business and finance</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et
+                            dolore.</p>
                         <a href="study-online.html" class="read-more">
                             Find out more
                             <span class="ri-arrow-right-line"></span>
@@ -200,7 +153,11 @@
                 <div class="about-content ml-15">
                     <span>About our university</span>
                     <h2>Our education system inspires the next generation</h2>
-                    <p>Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                    <p>Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque
+                        nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci
+                        porta dapibus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit
+                        amet ligula.</p>
                     <a href="about.html" class="default-btn">
                         Find out more
                         <i class="ri-arrow-right-line"></i>
@@ -215,36 +172,41 @@
 <section class="simple-steps-area pt-100 pb-70">
     <div class="container">
         <div class="section-title">
-            <h2>Simple steps to start</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <h2>Our Simple Steps</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna</p>
         </div>
         <div class="row">
             <div class="col-lg-3 col-sm-6">
                 <div class="single-simple-steps icon-bg-style">
                     <i class="flaticon-search"></i>
                     <h3>Querist</h3>
-                    <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et
+                        dolore.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single-simple-steps icon-bg-style">
                     <i class="flaticon-choosing"></i>
                     <h3>Choose</h3>
-                    <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et
+                        dolore.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single-simple-steps icon-bg-style">
                     <i class="flaticon-contract"></i>
                     <h3>Enroll</h3>
-                    <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et
+                        dolore.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single-simple-steps icon-bg-style">
                     <i class="flaticon-presentation"></i>
                     <h3>Start</h3>
-                    <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor incididunt ut labore et
+                        dolore.</p>
                 </div>
             </div>
         </div>
@@ -259,8 +221,11 @@
                 <div class="col-lg-5">
                     <div class="campus-content mr-15">
                         <span>Our campus information</span>
-                        <h2>We are proud that more than 50 students from different nationalities study on our campus</h2>
-                        <p>Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.</p>
+                        <h2>We are proud that more than 50 students from different nationalities study on our
+                            campus</h2>
+                        <p>Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a
+                            pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Pellentesque in
+                            ipsum id orci porta dapibus. Proin eget tortor risus.</p>
                         <a href="campus-information.html" class="read-more">
                             Find out more
                             <span class="ri-arrow-right-line"></span>
@@ -315,7 +280,8 @@
                                     Universities admission conference 2021
                                 </a>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
                             <a href="event-details.html" class="read-more">
                                 Find out more
                                 <i class="ri-arrow-right-line"></i>
@@ -332,7 +298,8 @@
                                     History and culture open day conference 2021
                                 </a>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
                             <a href="event-details.html" class="read-more">
                                 Find out more
                                 <i class="ri-arrow-right-line"></i>
@@ -349,7 +316,8 @@
                                     Undergraduate and postgraduate open days 2021
                                 </a>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
                             <a href="event-details.html" class="read-more">
                                 Find out more
                                 <i class="ri-arrow-right-line"></i>
@@ -433,7 +401,11 @@
                 <div class="admission-content ml-15">
                     <span>Admission information</span>
                     <h2>All types of university admission information can be found here</h2>
-                    <p>Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                    <p>Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque
+                        nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci
+                        porta dapibus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit
+                        amet ligula.</p>
                     <a href="admissions.html" class="default-btn">
                         Overview
                         <i class="ri-arrow-right-line"></i>
@@ -449,7 +421,8 @@
     <div class="container">
         <div class="section-title">
             <h2>Our professors</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna</p>
         </div>
         <div class="row justify-content-md-center">
             <div class="col-lg-4 col-md-6">
@@ -599,7 +572,8 @@
     <div class="container">
         <div class="section-title">
             <h2>Academic’s news</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt laboredolore magna suspendisse ultrices gravida.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt laboredolore
+                magna suspendisse ultrices gravida.</p>
         </div>
         <div class="row justify-content-md-center">
             <div class="col-lg-4 col-md-6">
@@ -620,7 +594,8 @@
                                 How I applying to university
                             </a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore. Ipsum nobis amet nisi voluptate corporis consectetur adipisicing elit alias</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore. Ipsum
+                            nobis amet nisi voluptate corporis consectetur adipisicing elit alias</p>
                     </div>
                 </div>
             </div>
@@ -642,7 +617,8 @@
                                 What and where choosing to study
                             </a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore. Ipsum nobis amet nisi voluptate corporis consectetur adipisicing elit alias</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore. Ipsum
+                            nobis amet nisi voluptate corporis consectetur adipisicing elit alias</p>
                     </div>
                 </div>
             </div>
@@ -664,7 +640,8 @@
                                 A day in the life of a student
                             </a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore. Ipsum nobis amet nisi voluptate corporis consectetur adipisicing elit alias</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore. Ipsum
+                            nobis amet nisi voluptate corporis consectetur adipisicing elit alias</p>
                     </div>
                 </div>
             </div>
@@ -681,7 +658,8 @@
                     <a href="index.html" class="logo">
                         <img src="{{ asset('/') }}front-assets/images/white-logo.png" alt="Image">
                     </a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas animi, minima velit corrupti fugit! Tenetur animi suscipit, reiciendis ad consectetur fugit</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas animi, minima velit
+                        corrupti fugit! Tenetur animi suscipit, reiciendis ad consectetur fugit</p>
                     <ul class="social-icon">
                         <li>
                             <span>Follow us:</span>
@@ -765,7 +743,8 @@
                         <li>
                             <i class="ri-mail-line"></i>
                             <span>Email</span>
-                            <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#620b0c040d22170c010d4c010d0f"><span class="__cf_email__" data-cfemail="c1a8afa7ae81b4afa2aeefa2aeac">[email&#160;protected]</span></a>
+                            <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#620b0c040d22170c010d4c010d0f"><span
+                                    class="__cf_email__" data-cfemail="c1a8afa7ae81b4afa2aeefa2aeac">[email&#160;protected]</span></a>
                         </li>
                         <li>
                             <i class="ri-phone-line"></i>
@@ -794,7 +773,7 @@
     <i class="ri-arrow-up-s-fill"></i>
     <i class="ri-arrow-up-s-fill"></i>
 </div>
-    @include('frontend.inc.js')
+@include('frontend.inc.js')
 </body>
 
 </html>
