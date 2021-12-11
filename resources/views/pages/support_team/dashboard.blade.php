@@ -184,7 +184,7 @@
     @endif
     <div class="card">
         <div class="card-header header-elements-inline">
-            <h5 class="card-title">School Events Calendar</h5>
+            <h5 class="card-title">Semester Events Calendar</h5>
          {!! Qs::getPanelOptions() !!}
         </div>
 
