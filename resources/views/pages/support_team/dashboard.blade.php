@@ -98,6 +98,27 @@
         </div>
     </div>
 
+    <table class="table table-success table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Hall Name</th>
+            <th scope="col">Available Seat</th>
+            <th scope="col">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($dorms as $dorm)
+            <tr>
+                <th scope="row">{{ $loop->iteration }}</th>
+                <td>{{ $dorm->name }}</td>
+                <td>{{ $dorm->available }}</td>
+                <td>{{ $dorm->description }}</td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
+
     <div class="card">
         <div class="card-header header-elements-inline">
             <h5 class="card-title">School Events Calendar</h5>
