@@ -6,7 +6,7 @@
                     <li>
                         <a href="tel:+1-(514)-312-5678">
                             <i class="ri-phone-fill"></i>
-                            +1 (514) 312-5678
+                            +880 (017) 312-5678
                         </a>
                     </li>
                 </ul>
@@ -74,7 +74,7 @@
                                     <a href="/courses" class="nav-link">Courses</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="tuition-fees.html" class="nav-link">Tuition fees</a>
+                                    <a href="/tuition-fees" class="nav-link">Tuition fees</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="courses-details.html" class="nav-link">Courses details</a>

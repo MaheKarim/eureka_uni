@@ -16,6 +16,9 @@ Route::get('/homepage', 'FrontEndController@index');
     Route::get('courses', function () {
         return view('frontend.courses');
     });
+    Route::get('tuition-fees', function () {
+        return view('frontend.tuition-fees');
+    });
 /*************** Frontend Team End *****************/
 
 Route::group(['middleware' => 'auth'], function () {
