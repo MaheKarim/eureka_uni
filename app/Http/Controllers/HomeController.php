@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\Qs;
+use App\Models\Dorm;
 use App\Repositories\UserRepo;
 
 class HomeController extends Controller
@@ -38,6 +39,7 @@ class HomeController extends Controller
     public function dashboard()
     {
         $d=[];
+        $d['dorms'] = Dorm::all();
         if(Qs::userIsTeamSAT()){
             $d['users'] = $this->user->getAll();
         }
