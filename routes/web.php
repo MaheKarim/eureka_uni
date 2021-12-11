@@ -8,6 +8,14 @@ Route::get('/terms-of-use', 'HomeController@terms_of_use')->name('terms_of_use')
 
 Route::get('/homepage', 'FrontEndController@index');
 
+/*************** Frontend Team Start *****************/
+
+
+    Route::get('courses', function () {
+        return view('frontend.courses');
+    });
+/*************** Frontend Team End *****************/
+
 Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/', 'HomeController@dashboard')->name('home');
