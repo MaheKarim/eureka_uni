@@ -17,10 +17,9 @@ class CreateStudentPaymentsTable extends Migration
             $table->id();
             $table->tinyInteger('payment_method')->default(\App\Enums\PaymentMethod::OFFLINE);
             $table->integer('student_id')->nullable();
-            $table->integer('my_class_id')->nullable();
-            $table->integer('section_id')->nullable();
-            $table->integer('session')->nullable();
+            $table->string('code')->nullable();
             $table->integer('amount');
+            $table->integer('send_number');
             $table->text('description')->nullable();
             $table->timestamps();
         });

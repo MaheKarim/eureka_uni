@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\StudentPaymentController;
+
 Auth::routes();
 
 //Route::get('/test', 'TestController@index')->name('test');
@@ -27,6 +29,10 @@ Route::group(['middleware' => 'auth'], function () {
         Route::put('/', 'MyAccountController@update_profile')->name('my_account.update');
         Route::put('/change_password', 'MyAccountController@change_pass')->name('my_account.change_pass');
     });
+
+    Route::get('create-payment', 'StudentPaymentController@create')->name('students.payment.create');
+    Route::post('create-payment', 'StudentPaymentController@store')->name('students.payment.store');
+    Route::get('/view/payments', 'StudentPaymentController@show')->name('payments.all');
 
     /*************** Support Team *****************/
     Route::group(['namespace' => 'SupportTeam',], function(){

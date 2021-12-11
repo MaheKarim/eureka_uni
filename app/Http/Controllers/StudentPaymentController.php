@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\Qs;
 use App\Models\StudentPayment;
+use Auth;
 use Illuminate\Http\Request;
 
 class StudentPaymentController extends Controller
@@ -14,7 +16,7 @@ class StudentPaymentController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -24,7 +26,7 @@ class StudentPaymentController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.student-payments.create');
     }
 
     /**
@@ -35,7 +37,14 @@ class StudentPaymentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $student_payments = new StudentPayment();
+        $student_payments->fill($request->all());
+        $student_payments->code = Auth::user()->code;
+        $student_payments->student_id = Auth::user()->id;
+        $student_payments->save();
+
+        return Qs::jsonStoreOk();
     }
 
     /**
@@ -44,9 +53,11 @@ class StudentPaymentController extends Controller
      * @param  \App\Models\StudentPayment  $studentPayment
      * @return \Illuminate\Http\Response
      */
-    public function show(StudentPayment $studentPayment)
+    public function show()
     {
-        //
+        $payments = StudentPayment::all();
+
+        return view('pages.student-payments.index_admin', compact('payments'));
     }
 
     /**

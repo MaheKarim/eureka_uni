@@ -6,6 +6,6 @@
 </li>
 
 <li class="nav-item">
-    <a href="#" class="nav-link"><i class="icon-paypal"></i> Payment </a>
+    <a href="{{ route('students.payment.create') }}" class="nav-link"><i class="icon-paypal"></i> Payment </a>
 </li>
 
