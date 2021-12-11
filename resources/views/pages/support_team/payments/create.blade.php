@@ -16,7 +16,7 @@
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label font-weight-semibold">Title <span class="text-danger">*</span></label>
                             <div class="col-lg-9">
-                                <input name="title" value="{{ old('title') }}" required type="text" class="form-control" placeholder="Eg. School Fees">
+                                <input name="title" value="{{ old('title') }}" required type="text" class="form-control" placeholder="Eg. Semesters Fees">
                             </div>
                         </div>
 

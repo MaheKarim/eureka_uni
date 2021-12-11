@@ -4,8 +4,7 @@
 
     {{--Reset All--}}
     <div class="card">
-        <div class="card-body text-center
-">
+        <div class="card-body text-center">
             <button id="promotion-reset-all" class="btn btn-danger btn-large">Reset All Promotions for the Session</button>
         </div>
     </div>
@@ -25,8 +24,8 @@
                     <th>S/N</th>
                     <th>Photo</th>
                     <th>Name</th>
-                    <th>From Class</th>
-                    <th>To Class</th>
+                    <th>From Semester (Dept.)</th>
+                    <th>To Semester (Dept.)</th>
                     <th>Status</th>
                     <th>Action</th>
                 </tr>

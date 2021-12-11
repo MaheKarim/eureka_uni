@@ -1,17 +1,17 @@
 @extends('layouts.master')
-@section('page_title', 'Manage Classes')
+@section('page_title', 'Manage Departments')
 @section('content')
 
     <div class="card">
         <div class="card-header header-elements-inline">
-            <h6 class="card-title">Manage Classes</h6>
+            <h6 class="card-title">Manage Departments</h6>
             {!! Qs::getPanelOptions() !!}
         </div>
 
         <div class="card-body">
             <ul class="nav nav-tabs nav-tabs-highlight">
-                <li class="nav-item"><a href="#all-classes" class="nav-link active" data-toggle="tab">Manage Classes</a></li>
-                <li class="nav-item"><a href="#new-class" class="nav-link" data-toggle="tab"><i class="icon-plus2"></i> Create New Class</a></li>
+                <li class="nav-item"><a href="#all-classes" class="nav-link active" data-toggle="tab">Manage Departments</a></li>
+                <li class="nav-item"><a href="#new-class" class="nav-link" data-toggle="tab"><i class="icon-plus2"></i> Create New Departments</a></li>
             </ul>
 
             <div class="tab-content">
@@ -21,7 +21,7 @@
                             <tr>
                                 <th>S/N</th>
                                 <th>Name</th>
-                                <th>Class Type</th>
+                                <th>Departments Type</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -65,7 +65,7 @@
                             <div class="alert alert-info border-0 alert-dismissible">
                                 <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
 
-                                <span>When a class is created, a Section will be automatically created for the class, you can edit it or add more sections to the class at <a target="_blank" href="{{ route('sections.index') }}">Manage Sections</a></span>
+                                <span>When a Departments is created, a Section will be automatically created for the class, you can edit it or add more sections to the class at <a target="_blank" href="{{ route('sections.index') }}">Manage Sections</a></span>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="class_type_id" class="col-lg-3 col-form-label font-weight-semibold">Class Type</label>
+                                    <label for="class_type_id" class="col-lg-3 col-form-label font-weight-semibold">Departments Type</label>
                                     <div class="col-lg-9">
                                         <select required data-placeholder="Select Class Type" class="form-control select" name="class_type_id" id="class_type_id">
                                             @foreach($class_types as $ct)

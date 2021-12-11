@@ -1,10 +1,10 @@
 @extends('layouts.master')
-@section('page_title', 'Manage Class Sections')
+@section('page_title', 'Manage Departments Sections')
 @section('content')
 
     <div class="card">
         <div class="card-header header-elements-inline">
-            <h6 class="card-title">Manage Class Sections</h6>
+            <h6 class="card-title">Manage Departments Sections</h6>
             {!! Qs::getPanelOptions() !!}
         </div>
 
@@ -35,7 +35,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="my_class_id" class="col-lg-3 col-form-label font-weight-semibold">Select Class <span class="text-danger">*</span></label>
+                                    <label for="my_class_id" class="col-lg-3 col-form-label font-weight-semibold">Select Departments <span class="text-danger">*</span></label>
                                     <div class="col-lg-9">
                                         <select required data-placeholder="Select Class" class="form-control select" name="my_class_id" id="my_class_id">
                                             @foreach($my_classes as $c)
@@ -71,7 +71,7 @@
                             <tr>
                                 <th>S/N</th>
                                 <th>Name</th>
-                                <th>Class</th>
+                                <th>Departments</th>
                                 <th>Teacher</th>
                                 <th>Action</th>
                             </tr>
@@ -106,8 +106,8 @@
                                                         <a id="{{ $s->id }}" onclick="confirmDelete(this.id)" href="#" class="dropdown-item"><i class="icon-trash"></i> Delete</a>
                                                         <form method="post" id="item-delete-{{ $s->id }}" action="{{ route('sections.destroy', $s->id) }}" class="hidden">@csrf @method('delete')</form>
                                                     @endif
-
                                                 </div>
+
                                             </div>
                                         </div>
                                     </td>
@@ -117,11 +117,8 @@
                         </table>
                     </div>
                 @endforeach
-
             </div>
         </div>
     </div>
-
     {{--Section List Ends--}}
-
 @endsection
