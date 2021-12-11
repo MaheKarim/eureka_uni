@@ -97,6 +97,69 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        @foreach($pay_records as $pay_record)
+        <div class="col-sm-6 col-xl-3">
+            <div class="card card-body bg-danger-400 has-bg-image">
+                <div class="media">
+                    <div class="mr-3 align-self-center">
+                        <i class="icon-user icon-3x opacity-75"></i>
+                    </div>
+
+                    <div class="media-body text-right">
+                        <h3 class="mb-0">{{ data_get($pay_record, "amt_paid") }}</h3>
+                        <span class="text-uppercase font-size-xs">Amount Paid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3">
+            <div class="card card-body bg-info-400 has-bg-image">
+                <div class="media">
+                    <div class="mr-3 align-self-center">
+                        <i class="icon-user icon-3x opacity-75"></i>
+                    </div>
+
+                    <div class="media-body text-right">
+                        <h3 class="mb-0">{{ data_get($pay_record, "balance") }}</h3>
+                        <span class="text-uppercase font-size-xs">Balance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3">
+            <div class="card card-body bg-success-400 has-bg-image">
+                <div class="media">
+                    <div class="mr-3 align-self-center">
+                        <i class="icon-user icon-3x opacity-75"></i>
+                    </div>
+
+                    <div class="media-body text-right">
+                        <h3 class="mb-0">{{ data_get($pay_record, "paid") }}</h3>
+                        <span class="text-uppercase font-size-xs">Paid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3">
+            <div class="card card-body bg-primary-400 has-bg-image">
+                <div class="media">
+                    <div class="mr-3 align-self-center">
+                        <i class="icon-user icon-3x opacity-75"></i>
+                    </div>
+
+                    <div class="media-body text-right">
+                        <h3 class="mb-0">{{ data_get($pay_record, "ref_no") }}</h3>
+                        <span class="text-uppercase font-size-xs">Ref.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endforeach
+    </div>
 
     <table class="table table-success table-striped">
         <thead>

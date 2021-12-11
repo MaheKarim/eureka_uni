@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Helpers\Qs;
 use App\Models\Dorm;
+use App\Models\PaymentRecord;
 use App\Repositories\UserRepo;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -43,7 +46,10 @@ class HomeController extends Controller
         if(Qs::userIsTeamSAT()){
             $d['users'] = $this->user->getAll();
         }
+        $d['user'] =  User::where('id', Auth::user()->id)->first();
 
+        $d['pay_records'] = PaymentRecord::where('student_id', '=', Auth::user()->id)->get();
+//        dd($pay_records);
         return view('pages.support_team.dashboard', $d);
     }
 }
