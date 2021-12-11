@@ -65,7 +65,7 @@
            </div>
        </div>
        @endif
-
+    @if(Qs::userIsStudent())
     {{--Events Calendar Begins--}}
     <div class="row">
         <div class="col-sm-6 col-xl-3">
@@ -118,7 +118,7 @@
         @endforeach
         </tbody>
     </table>
-
+    @endif
     <div class="card">
         <div class="card-header header-elements-inline">
             <h5 class="card-title">School Events Calendar</h5>
