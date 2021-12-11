@@ -19,16 +19,16 @@ class MyClassesTableSeeder extends Seeder
         $ct = ClassType::pluck('id')->all();
 
         $data = [
-            ['name' => 'Nursery 1', 'class_type_id' => $ct[2]],
-            ['name' => 'Nursery 2', 'class_type_id' => $ct[2]],
-            ['name' => 'Nursery 3', 'class_type_id' => $ct[2]],
-            ['name' => 'Primary 1', 'class_type_id' => $ct[3]],
-            ['name' => 'Primary 2', 'class_type_id' => $ct[3]],
-            ['name' => 'JSS 2', 'class_type_id' => $ct[4]],
-            ['name' => 'JSS 3', 'class_type_id' => $ct[4]],
-            ['name' => 'SSS 1', 'class_type_id' => $ct[5]],
-            ['name' => 'SSS 2', 'class_type_id' => $ct[5]],
-            ['name' => 'SSS 3', 'class_type_id' => $ct[5]],
+            ['name' => 'B.Sc in CSE (Spring Semester)', 'class_type_id' => $ct[2]],
+            ['name' => 'B.Sc in CSE (Fall Semester)', 'class_type_id' => $ct[2]],
+            ['name' => 'B.Sc in CSE (Summer Semester)', 'class_type_id' => $ct[2]],
+            ['name' => 'B.Sc in Pharmacy (Spring Semester)', 'class_type_id' => $ct[3]],
+            ['name' => 'B.Sc in Pharmacy (Fall Semester)', 'class_type_id' => $ct[3]],
+            ['name' => 'M.Sc in CSE (Summer Semester)', 'class_type_id' => $ct[4]],
+            ['name' => 'M.Sc in CSE (Fall Semester)', 'class_type_id' => $ct[4]],
+            ['name' => 'M.Sc in Textile (Fall Semester)', 'class_type_id' => $ct[5]],
+            ['name' => 'B.A in English', 'class_type_id' => $ct[5]],
+            ['name' => 'B.B.A.', 'class_type_id' => $ct[5]],
             ];
 
         DB::table('my_classes')->insert($data);

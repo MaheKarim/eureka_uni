@@ -15,9 +15,9 @@
                       <div class="row">
                           <div class="col-md-10">
                               <div class="form-group">
-                                  <label for="my_class_id" class="col-form-label font-weight-bold">Class:</label>
+                                  <label for="my_class_id" class="col-form-label font-weight-bold">Semester:</label>
                                   <select required id="my_class_id" name="my_class_id" class="form-control select">
-                                      <option value="">Select Class</option>
+                                      <option value="">Select Semester</option>
                                       @foreach($my_classes as $c)
                                           <option {{ ($selected && $my_class_id == $c->id) ? 'selected' : '' }} value="{{ $c->id }}">{{ $c->name }}</option>
                                       @endforeach

@@ -68,7 +68,7 @@
                                 <th>Title</th>
                                 <th>Amount</th>
                                 <th>Ref_No</th>
-                                <th>Class</th>
+                                <th>Semester</th>
                                 <th>Method</th>
                                 <th>Info</th>
                                 <th>Action</th>
