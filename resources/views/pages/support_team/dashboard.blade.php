@@ -96,6 +96,20 @@
                 </div>
             </div>
         </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="card card-body bg-success-400 has-bg-image">
+                <div class="media">
+                    <div class="mr-3 align-self-center">
+                        <i class="icon-user icon-3x opacity-75"></i>
+                    </div>
+
+                    <div class="media-body text-right">
+                        <h3 class="mb-0">{{ $stu_rec->my_class->name }}</h3>
+                        <span class="text-uppercase font-size-xs">Your Enroll Dept.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row">
         @foreach($pay_records as $pay_record)
@@ -108,7 +122,7 @@
 
                     <div class="media-body text-right">
                         <h3 class="mb-0">{{ data_get($pay_record, "amt_paid") }}</h3>
-                        <span class="text-uppercase font-size-xs">Amount Paid</span>
+                        <span class="text-uppercase font-size-xs">Paid Amount </span>
                     </div>
                 </div>
             </div>
@@ -123,7 +137,7 @@
 
                     <div class="media-body text-right">
                         <h3 class="mb-0">{{ data_get($pay_record, "balance") }}</h3>
-                        <span class="text-uppercase font-size-xs">Balance</span>
+                        <span class="text-uppercase font-size-xs">Due</span>
                     </div>
                 </div>
             </div>
@@ -137,8 +151,8 @@
                     </div>
 
                     <div class="media-body text-right">
-                        <h3 class="mb-0">{{ data_get($pay_record, "paid") }}</h3>
-                        <span class="text-uppercase font-size-xs">Paid</span>
+                        <h3 class="mb-0">{{ data_get($pay_record, "payment.amount") }}</h3>
+                        <span class="text-uppercase font-size-xs">Total Amount</span>
                     </div>
                 </div>
             </div>
@@ -181,6 +195,32 @@
         @endforeach
         </tbody>
     </table>
+ <br>
+    <table class="table table-success table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Payment (Fee) Type</th>
+            <th scope="col">Course / Semester Fee(amount)</th>
+            <th scope="col">Class Name</th>
+            <th scope="col">Ref No</th>
+            <th scope="col">Session</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($payments as $pay)
+            <tr>
+                <th scope="row">{{ $loop->iteration }}</th>
+                <td>{{ $pay->title }}</td>
+                <td>{{ $pay->amount }}</td>
+                <td>{{ $pay->my_class->name }}</td>
+                <td>{{ $pay->ref_no }}</td>
+                <td>{{ $pay->year }}</td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
+
     @endif
     <div class="card">
         <div class="card-header header-elements-inline">
