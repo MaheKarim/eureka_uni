@@ -182,6 +182,7 @@
                     <div class="single-simple-steps icon-bg-style">
                         <i class="flaticon-search"></i>
                         <h3>{{ data_get($hall, "name") }}</h3>
+                        <p>Total Seat Available: {{ data_get($hall, "available") ? : "No Data Available" }}</p> <br>
                         <p>{{ data_get($hall, "description") }}</p>
                     </div>
                 </div>
