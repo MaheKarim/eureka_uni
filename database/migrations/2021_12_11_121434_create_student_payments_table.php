@@ -21,6 +21,7 @@ class CreateStudentPaymentsTable extends Migration
             $table->integer('amount');
             $table->integer('send_number');
             $table->text('description')->nullable();
+            $table->tinyInteger('payment_status')->default(\App\Enums\PaymentStatus::PENDING);
             $table->timestamps();
         });
     }

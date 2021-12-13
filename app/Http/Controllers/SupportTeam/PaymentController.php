@@ -14,7 +14,7 @@ use App\Repositories\StudentRepo;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use PDF;
+use Barryvdh\DomPDF\PDF;
 
 class PaymentController extends Controller
 {
