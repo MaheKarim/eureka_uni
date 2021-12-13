@@ -56,7 +56,7 @@ class StudentPaymentController extends Controller
     public function show()
     {
         $payments = StudentPayment::all();
-
+//        dd($payments);
         return view('pages.student-payments.index_admin', compact('payments'));
     }
 
@@ -66,9 +66,11 @@ class StudentPaymentController extends Controller
      * @param  \App\Models\StudentPayment  $studentPayment
      * @return \Illuminate\Http\Response
      */
-    public function edit(StudentPayment $studentPayment)
+    public function edit($id)
     {
-        //
+        $d = StudentPayment::find($id);
+//        dd($d);
+        return view('pages.student-payments.edit', compact('d'));
     }
 
     /**
@@ -78,9 +80,13 @@ class StudentPaymentController extends Controller
      * @param  \App\Models\StudentPayment  $studentPayment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, StudentPayment $studentPayment)
+    public function update(Request $request, $id)
     {
-        //
+        $payment = StudentPayment::find($id);
+        $payment->fill($request->only('payment_status'));
+        $payment->update();
+
+        return redirect()->route('payments.all');
     }
 
     /**

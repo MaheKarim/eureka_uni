@@ -45,6 +45,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('create-payment', 'StudentPaymentController@create')->name('students.payment.create');
     Route::post('create-payment', 'StudentPaymentController@store')->name('students.payment.store');
     Route::get('/view/payments', 'StudentPaymentController@show')->name('payments.all');
+    Route::get('/view/{id}/self-payments/edit', 'StudentPaymentController@edit')->name('myPayments.edit');
+    Route::put('/view-payments', 'StudentPaymentController@update')->name('myPayments.update');
 
     /*************** Support Team *****************/
     Route::group(['namespace' => 'SupportTeam',], function(){

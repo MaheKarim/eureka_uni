@@ -24,7 +24,7 @@
                             <label for="my_class_id" class="col-lg-3 col-form-label font-weight-semibold">Payments Methods </label>
                             <div class="col-lg-9">
                                 <select class="form-control select-search" name="payment_method" id="payment_method">
-                                    <option value="">All Payments Methods</option>
+                                    <option value="">Select Payments Methods</option>
                                     @foreach(trans('payment.payment_method') as $value => $item)
                                         <option value="{{ $value }}">{{ $item }}</option>
                                     @endforeach
@@ -40,7 +40,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="description" class="col-lg-3 col-form-label font-weight-semibold">Description</label>
+                            <label for="description" class="col-lg-3 col-form-label font-weight-semibold">Transaction ID</label>
                             <div class="col-lg-9">
                                 <input class="form-control" value="{{ old('description') }}" name="description" id="description" type="text">
                             </div>

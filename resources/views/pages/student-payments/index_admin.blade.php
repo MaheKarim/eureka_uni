@@ -24,6 +24,7 @@
                             <th>Send Number</th>
                             <th>Amount</th>
                             <th>Payment Method</th>
+                            <th>Payment Status</th>
                             <th>Description</th>
                         </tr>
                         </thead>
@@ -36,6 +37,7 @@
                                 <td>{{ $d->send_number }}</td>
                                 <td>{{ $d->amount }}</td>
                                 <td>{{ trans('payment.payment_method.'.$d->payment_method) }}</td>
+                                <td>{{ trans('payment_status.payment_status.'.$d->payment_status) }}</td>
                                 <td>{{ data_get($d, "description") }}</td>
                                 <td class="text-center">
                                     <div class="list-icons">
@@ -44,18 +46,18 @@
                                                 <i class="icon-menu9"></i>
                                             </a>
 
-{{--                                            <div class="dropdown-menu dropdown-menu-left">--}}
+                                            <div class="dropdown-menu dropdown-menu-left">
 {{--                                                @if(Qs::userIsTeamSA())--}}
-{{--                                                    --}}{{--Edit--}}
-{{--                                                    <a href="{{ route('dorms.edit', $d->id) }}" class="dropdown-item"><i class="icon-pencil"></i> Edit</a>--}}
-{{--                                                @endif--}}
-{{--                                                @if(Qs::userIsSuperAdmin())--}}
+                                                    <a href="{{ route('myPayments.edit', $d->id) }}" class="dropdown-item"><i class="icon-pencil"></i> Edit</a>
+{{--
+
+                                                        @if(Qs::userIsSuperAdmin())--}}
 {{--                                                    --}}{{--Delete--}}
 {{--                                                    <a id="{{ $d->id }}" onclick="confirmDelete(this.id)" href="#" class="dropdown-item"><i class="icon-trash"></i> Delete</a>--}}
 {{--                                                    <form method="post" id="item-delete-{{ $d->id }}" action="{{ route('dorms.destroy', $d->id) }}" class="hidden">@csrf @method('delete')</form>--}}
 {{--                                                @endif--}}
 
-{{--                                            </div>--}}
+                                            </div>
                                         </div>
                                     </div>
                                 </td>
