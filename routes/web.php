@@ -1,24 +1,33 @@
 <?php
 
-use App\Http\Controllers\StudentPaymentController;
-
 Auth::routes();
 
 //Route::get('/test', 'TestController@index')->name('test');
 Route::get('/privacy-policy', 'HomeController@privacy_policy')->name('privacy_policy');
 Route::get('/terms-of-use', 'HomeController@terms_of_use')->name('terms_of_use');
 
-Route::get('/homepage', 'FrontEndController@index');
+Route::get('/homepage', 'FrontEndController@index')->name('homepage');
 
 /*************** Frontend Team Start *****************/
 
 
-    Route::get('courses', function () {
-        return view('frontend.courses');
-    });
-    Route::get('tuition-fees', function () {
-        return view('frontend.tuition-fees');
-    });
+        Route::get('courses', function () {
+            return view('frontend.courses');
+        });
+        Route::get('about', function () {
+            return view('frontend.about');
+        });
+        Route::get('tuition-fees', function () {
+            return view('frontend.tuition-fees');
+        });
+
+        Route::get('courses-details', function () {
+            return view('frontend.courses-details');
+        });
+
+        Route::get('application', function () {
+            return view('frontend.application');
+        });
 /*************** Frontend Team End *****************/
 
 Route::group(['middleware' => 'auth'], function () {

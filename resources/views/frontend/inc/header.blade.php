@@ -60,13 +60,40 @@
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="{{ url('/homepage') }}" class="nav-link active">
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="/about" class="nav-link active">
                                 About
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="/about" class="nav-link">History</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/tuition-fees" class="nav-link">Vision & Mission</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/homepage') }}" class="nav-link">Goal & Objectives</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/homepage') }}" class="nav-link">Syndicate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/homepage') }}" class="nav-link">Academic Council</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/application') }}" class="nav-link">University Admission</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                Academics
                                 <i class="ri-arrow-down-s-line"></i>
                             </a>
                             <ul class="dropdown-menu">
@@ -77,121 +104,162 @@
                                     <a href="/tuition-fees" class="nav-link">Tuition fees</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="courses-details.html" class="nav-link">Courses details</a>
+                                    <a href="/courses-details" class="nav-link">Courses details</a>
                                 </li>
                             </ul>
                         </li>
+
+                        <li class="nav-item">
+                                <a href="/courses" class="nav-link">
+                                Admission
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{{ url('/homepage') }}" class="nav-link">Admission Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/homepage') }}" class="nav-link">Undergraduate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/homepage') }}" class="nav-link">Graduate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/tuition-fees" class="nav-link">Tution Fees</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/homepage') }}" class="nav-link">Scholarships</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/homepage') }}" class="nav-link">Payments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/homepage') }}" class="nav-link">Admission Eligibility</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/homepage') }}" class="nav-link">Admission Test Procedure</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/application" class="nav-link">Apply Online</a>
+                                </li>
+                            </ul>
+                        </li>
+
                         <li class="nav-item">
                             <a href="#" class="nav-link active">
-                                Academics
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Courses
+                                International Students
                                 <i class="ri-arrow-down-s-line"></i>
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="courses.html" class="nav-link">Courses</a>
+                                    <a href="/courses" class="nav-link">Study Options</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="tuition-fees.html" class="nav-link">Tuition fees</a>
+                                    <a href="/tuition-fees" class="nav-link">Entry Requirements</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="courses-details.html" class="nav-link">Courses details</a>
+                                    <a href="/courses-details" class="nav-link">Accommodation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/tuition-fees" class="nav-link">Tuition Fees</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/courses-details" class="nav-link">Student Life</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Pages
-                                <i class="ri-arrow-down-s-line"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a href="about.html" class="nav-link">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="application.html" class="nav-link">Application form</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="our-professors.html" class="nav-link">Our professors</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Campus
-                                        <i class="ri-arrow-down-s-line"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="campus-information.html" class="nav-link">Campus information</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="campus-experience.html" class="nav-link">Campus experience</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="alumni.html" class="nav-link">Alumni</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="study-online.html" class="nav-link">Study online</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="admissions.html" class="nav-link">Admissions</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="faq.html" class="nav-link">FAQ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="gallery.html" class="nav-link">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        User
-                                        <i class="ri-arrow-down-s-line"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="my-account.html" class="nav-link">My account</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="log-in.html" class="nav-link">Log in</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="register.html" class="nav-link">Register</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="privacy-policy.html" class="nav-link">Privacy policy</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="terms-conditions.html" class="nav-link">Terms & conditions</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="coming-soon.html" class="nav-link">Coming soon</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="404.html" class="nav-link">404 Page</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Events
-                                <i class="ri-arrow-down-s-line"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a href="events.html" class="nav-link">Events</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="event-details.html" class="nav-link">Event details</a>
-                                </li>
-                            </ul>
-                        </li>
+
+
+{{--                        <li class="nav-item">--}}
+{{--                            <a href="#" class="nav-link">--}}
+{{--                                Pages--}}
+{{--                                <i class="ri-arrow-down-s-line"></i>--}}
+{{--                            </a>--}}
+{{--                            <ul class="dropdown-menu">--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="about.html" class="nav-link">About</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="application.html" class="nav-link">Application form</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="our-professors.html" class="nav-link">Our professors</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="#" class="nav-link">--}}
+{{--                                        Campus--}}
+{{--                                        <i class="ri-arrow-down-s-line"></i>--}}
+{{--                                    </a>--}}
+{{--                                    <ul class="dropdown-menu">--}}
+{{--                                        <li class="nav-item">--}}
+{{--                                            <a href="campus-information.html" class="nav-link">Campus information</a>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="nav-item">--}}
+{{--                                            <a href="campus-experience.html" class="nav-link">Campus experience</a>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="nav-item">--}}
+{{--                                            <a href="alumni.html" class="nav-link">Alumni</a>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="nav-item">--}}
+{{--                                            <a href="study-online.html" class="nav-link">Study online</a>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="nav-item">--}}
+{{--                                            <a href="admissions.html" class="nav-link">Admissions</a>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="faq.html" class="nav-link">FAQ</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="gallery.html" class="nav-link">Gallery</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="#" class="nav-link">--}}
+{{--                                        User--}}
+{{--                                        <i class="ri-arrow-down-s-line"></i>--}}
+{{--                                    </a>--}}
+{{--                                    <ul class="dropdown-menu">--}}
+{{--                                        <li class="nav-item">--}}
+{{--                                            <a href="my-account.html" class="nav-link">My account</a>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="nav-item">--}}
+{{--                                            <a href="log-in.html" class="nav-link">Log in</a>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="nav-item">--}}
+{{--                                            <a href="register.html" class="nav-link">Register</a>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="privacy-policy.html" class="nav-link">Privacy policy</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="terms-conditions.html" class="nav-link">Terms & conditions</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="coming-soon.html" class="nav-link">Coming soon</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="404.html" class="nav-link">404 Page</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                        <li class="nav-item">--}}
+{{--                            <a href="#" class="nav-link">--}}
+{{--                                Events--}}
+{{--                                <i class="ri-arrow-down-s-line"></i>--}}
+{{--                            </a>--}}
+{{--                            <ul class="dropdown-menu">--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="events.html" class="nav-link">Events</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="event-details.html" class="nav-link">Event details</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
                         <li class="nav-item">
                             <a href="{{ url('/dashboard') }}" class="nav-link">
                                 Hall Allotment

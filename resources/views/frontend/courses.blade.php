@@ -8,7 +8,7 @@
 
     @include('frontend.inc.style')
 
-    <title>Unco - College University HTML Template</title>
+    <title>City -  University </title>
 </head>
 <body>
 
@@ -51,7 +51,7 @@
             <h2>Corses</h2>
             <ul>
                 <li>
-                    <a href="index.html">
+                    <a href="{{ url('/homepage') }}">
                         Home
                     </a>
                 </li>
