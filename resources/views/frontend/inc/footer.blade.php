@@ -1,68 +1,11 @@
-<section class="studys-area pb-70">
-    <div class="container">
-        <div class="section-title">
-            <h2>Demandable courses</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna</p>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-study study-f3f3f4">
-                    <i class="flaticon-finance"></i>
-                    <h3>
-                        <a href="study-online.html">Administrative studies</a>
-                    </h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil odio dolorum voluptatibus
-                        inventore, non sint repellat mollitia omnis? Velit fugiat optio odio illum quas doloremque
-                        quis</p>
-                    <a href="#" class="read-more">
-                        Find out more
-                        <span class="ri-arrow-right-line"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-study study-f3f3f4">
-                    <i class="flaticon-contract"></i>
-                    <h3>
-                        <a href="study-online.html">Creative arts and design</a>
-                    </h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil odio dolorum voluptatibus
-                        inventore, non sint repellat mollitia omnis? Velit fugiat optio odio illum quas doloremque
-                        quis</p>
-                    <a href="study-online.html" class="read-more">
-                        Find out more
-                        <span class="ri-arrow-right-line"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-study study-f3f3f4">
-                    <i class="flaticon-computer-science"></i>
-                    <h3>
-                        <a href="study-online.html">Computer science</a>
-                    </h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil odio dolorum voluptatibus
-                        inventore, non sint repellat mollitia omnis? Velit fugiat optio odio illum quas doloremque
-                        quis</p>
-                    <a href="study-online.html" class="read-more">
-                        Find out more
-                        <span class="ri-arrow-right-line"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 
 <footer class="footer-area black-bg-color">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-3 col-sm-6">
                 <div class="single-footer-widget bg-f9f5f1">
-                    <a href="index.html" class="logo">
-                        <img src="{{ url('/') }}frontend-assets/images/white-logo.png" alt="Image">
+                    <a href="{{ url('/homepage') }}" class="logo">
+                        <img src="{{ asset('/') }}front-assets/images/logo.png" alt="Image">
                     </a>
                     <p>Lorem ipsum dolor </p>
                     <ul class="social-icon">
@@ -97,7 +40,7 @@
                     <h3>Useful link</h3>
                     <ul class="import-link">
                         <li>
-                            <a href="application.html">Application</a>
+                            <a href="/application">Application</a>
                         </li>
                         <li>
                             <a href="faq.html">FAQ</a>
@@ -143,18 +86,21 @@
                         <li class="location">
                             <i class="ri-map-pin-line"></i>
                             <span>Address</span>
-                            1312 Greg Street, Sparks. NV 88441
+                            CITY INFORMATION AND ADMISSION CENTER
+                            13/A, Panthapath, Dhaka-1215 <br>
+                            PERMANENT CAMPUS
+                            Khagan, Birulia, Savar, Dhaka-1216
                         </li>
                         <li>
                             <i class="ri-mail-line"></i>
                             <span>Email</span>
-                            <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#670e09010827120904084904080a"><span
-                                    class="__cf_email__" data-cfemail="2d44434b426d58434e42034e4240">[email&#160;protected]</span></a>
+                            city_uni@edu.bd
                         </li>
                         <li>
                             <i class="ri-phone-line"></i>
                             <span>Phone</span>
-                            <a href="tel:+1-(514)-312-5678">+1 (514) 312-5678</a>
+                            <a href="tel:+880 1862-213214">+880 1862-213214
+                            </a>
                         </li>
                     </ul>
                 </div>
