@@ -195,8 +195,9 @@
         @endforeach
         </tbody>
     </table>
- <br>
-    <table class="table table-success table-striped">
+    <br> <br> <br>
+
+    <table class="table table-danger table-striped">
         <thead>
         <tr>
             <th scope="col">#</th>
@@ -216,6 +217,29 @@
                 <td>{{ $pay->my_class->name }}</td>
                 <td>{{ $pay->ref_no }}</td>
                 <td>{{ $pay->year }}</td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
+        <br> <br> <br>
+    <table class="table table-info table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Send Number</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Transaction ID</th>
+            <th scope="col">Payment Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($payments_info as $d1)
+            <tr>
+                <th scope="row">{{ $loop->iteration }}</th>
+                <td>{{ $d1->send_number }}</td>
+                <td>{{ $d1->amount }}</td>
+                <td>{{ $d1->description }}</td>
+                <td>{{ trans('payment_status.payment_status.'.$d1->payment_status) }}</td>
             </tr>
         @endforeach
         </tbody>

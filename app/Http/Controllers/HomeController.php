@@ -6,6 +6,7 @@ use App\Helpers\Qs;
 use App\Models\Dorm;
 use App\Models\Payment;
 use App\Models\PaymentRecord;
+use App\Models\StudentPayment;
 use App\Models\StudentRecord;
 use App\Repositories\UserRepo;
 use App\User;
@@ -53,7 +54,7 @@ class HomeController extends Controller
         $d['pay_records'] = PaymentRecord::where('student_id', '=', Auth::user()->id)->get();
         $d['stu_rec'] = StudentRecord::where('user_id', Auth::user()->id)->first();
         $d['payments'] = Payment::all();
-
+        $d['payments_info'] = StudentPayment::where('student_id', Auth::user()->id)->get();
         return view('pages.support_team.dashboard', $d);
     }
 }
