@@ -66,7 +66,7 @@ class StudentPaymentController extends Controller
      * @param  \App\Models\StudentPayment  $studentPayment
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function find($id)
     {
         $d = StudentPayment::find($id);
 //        dd($d);
