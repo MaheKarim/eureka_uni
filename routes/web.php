@@ -48,6 +48,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/view/{id}/self-payments/edit', 'StudentPaymentController@find')->name('myPayments.edit');
     Route::put('/view-payments', 'StudentPaymentController@update')->name('myPayments.update');
 
+    Route::get('hall-booking/all', 'HallBookingController@index')->name('students.hallBooking.index');
+    Route::get('hall-booking/create', 'HallBookingController@create')->name('students.hallBooking.create');
+    Route::post('hall-booking', 'HallBookingController@store')->name('students.hallBooking.store');
+
     /*************** Support Team *****************/
     Route::group(['namespace' => 'SupportTeam',], function(){
 

@@ -159,6 +159,12 @@
                         <a href="{{ route('subjects.index') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['subjects.index','subjects.edit',]) ? 'active' : '' }}"><i class="icon-pin"></i> <span>Subjects</span></a>
                     </li>
                 @endif
+                    <li class="nav-item">
+                        <a href="{{ route('students.hallBooking.create') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['']) ? 'active' : '' }}"><i class="icon-home8"></i> <span>Hall Booking Create</span></a>
+                    </li>
+                <li class="nav-item">
+                    <a href="{{ route('students.hallBooking.index') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['']) ? 'active' : '' }}"><i class="icon-home8"></i> <span>My Hall Bookings</span></a>
+                </li>
 
                 {{--Exam--}}
                 @if(Qs::userIsTeamSAT())
