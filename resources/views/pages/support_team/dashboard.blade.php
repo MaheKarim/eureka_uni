@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="media-body text-right">
-                        <h3 class="mb-0">{{ $stu_rec->my_class->name }}</h3>
+                        <h3 class="mb-0">{{ data_get($stu_rec, "my_class.name") }}</h3>
                         <span class="text-uppercase font-size-xs">Your Enroll Dept.</span>
                     </div>
                 </div>
