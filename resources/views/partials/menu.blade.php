@@ -165,6 +165,11 @@
                 <li class="nav-item">
                     <a href="{{ route('students.hallBooking.index') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['']) ? 'active' : '' }}"><i class="icon-home8"></i> <span>My Hall Bookings</span></a>
                 </li>
+                @if(Qs::userIsSuperAdmin())
+                    <li class="nav-item">
+                        <a href="{{ route('students.hallBooking.show') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['']) ? 'active' : '' }}"><i class="icon-home8"></i> <span>Manage Hall Bookings</span></a>
+                    </li>
+                @endif
 
                 {{--Exam--}}
                 @if(Qs::userIsTeamSAT())

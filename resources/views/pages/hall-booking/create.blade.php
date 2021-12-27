@@ -20,7 +20,7 @@
                                 <select class="form-control select-search" name="dorm_id" id="payment_method">
                                     <option value="">Select Hall Name</option>
                                     @foreach($halls as $value )
-                                        <option value="{{ $value->id }}">{{ $value->name }}</option>
+                                        <option value="{{ $value->id }}">{{ $value->name }} : Available Seat( {{ data_get($value, "available") ? : "No Seat Record" }} )</option>
                                     @endforeach
                                 </select>
                             </div>

@@ -51,6 +51,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('hall-booking/all', 'HallBookingController@index')->name('students.hallBooking.index');
     Route::get('hall-booking/create', 'HallBookingController@create')->name('students.hallBooking.create');
     Route::post('hall-booking', 'HallBookingController@store')->name('students.hallBooking.store');
+    Route::get('hall-booking/show_all', 'HallBookingController@show')->name('students.hallBooking.show');
+    Route::get('hall-booking/edit/{edit}', 'HallBookingController@edit')->name('students.hallBooking.edit');
+    Route::post('hall-booking/update', 'HallBookingController@update')->name('students.hallBooking.update');
 
     /*************** Support Team *****************/
     Route::group(['namespace' => 'SupportTeam',], function(){
