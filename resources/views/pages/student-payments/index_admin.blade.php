@@ -32,10 +32,10 @@
                         @foreach($payments as $d)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $d->user->name }}</td>
-                                <td>{{ $d->code}}</td>
-                                <td>{{ $d->send_number }}</td>
-                                <td>{{ $d->amount }}</td>
+                                <td>{{ data_get($d, "user.name") }}</td>
+                                <td>{{ data_get($d, "code") }}</td>
+                                <td>{{ data_get($d, "send_number") }}</td>
+                                <td>{{ data_get($d, "amount") }}</td>
                                 <td>{{ trans('payment.payment_method.'.$d->payment_method) }}</td>
                                 <td>{{ trans('payment_status.payment_status.'.$d->payment_status) }}</td>
                                 <td>{{ data_get($d, "description") }}</td>
