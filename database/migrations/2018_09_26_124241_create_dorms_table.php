@@ -18,6 +18,7 @@ class CreateDormsTable extends Migration
             $table->string('name', 100)->unique();
             $table->string('available')->nullable();
             $table->string('description')->nullable();
+            $table->integer('emergency_number')->default(999)->nullable();
             $table->timestamps();
         });
     }
