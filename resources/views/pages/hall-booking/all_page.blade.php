@@ -23,6 +23,7 @@
                             <th>Student Name</th>
                             <th>Hall Name</th>
                             <th>Status</th>
+                            <th>Emergency Number</th>
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -33,6 +34,8 @@
                                 <td>{{ data_get($c, "user.name") }}</td>
                                 <td>{{ data_get($c, "dorm.name") }} [Available Seat: {{ data_get($c, "dorm.available") ? : "No Seat Record" }}]</td>
                                 <td>{{ trans('payment_status.payment_status.'.$c->status) }}</td>
+                                <td>{{ data_get($c, "emergency_number") }}</td>
+
                                 <td class="text-center">
                                     <div class="list-icons">
                                         <div class="dropdown">

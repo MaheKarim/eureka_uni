@@ -191,6 +191,7 @@
                 <td>{{ $dorm->name }}</td>
                 <td>{{ $dorm->available }}</td>
                 <td>{{ $dorm->description }}</td>
+                <td>{{ $dorm->emergency_number }}</td>
             </tr>
         @endforeach
         </tbody>
